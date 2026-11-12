@@ -21,5 +21,7 @@ Route::middleware('auth')->group(function () {
     //Route::put('/tarefa/alterarstatus/{id}', [TarefaController::class, 'alterarstatus'])->name('tarefa.alterarstatus');
 });
 
+ //Route::resource('setores', SetorController::class);
+
 
 require __DIR__.'/auth.php';
