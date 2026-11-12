@@ -18,11 +18,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-    Route::resource('setores', SetorController::class);
-    Route::patch('/setores/{id}/status',[SetorController::class,'ativarDesativar'])->name('setores.ativar-desativar');
-    Route::resource('usuario', UsuarioController::class);
-    Route::resource('tarefa', TarefaController::class);
-    Route::put('/tarefa/alterarstatus/{id}', [TarefaController::class, 'alterarstatus'])->name('tarefa.alterarstatus');
+    //Route::put('/tarefa/alterarstatus/{id}', [TarefaController::class, 'alterarstatus'])->name('tarefa.alterarstatus');
 });
 
 
